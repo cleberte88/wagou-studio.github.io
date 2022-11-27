@@ -1,3 +1,40 @@
 img{
   width: 60px;
 }
+
+.header-nav{
+  background: black;
+}
+
+h1{
+  color: white;
+}
+
+ul{
+  padding: 15px;
+}
+
+li{
+  display: inline-block;
+}
+
+li a{
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+li a:hover{
+  background: #ccc;
+  color: black;
+}
+
+.negociation{
+  float: right;
+}
+
+.negociation a:hover{
+  background: orangered;
+  color: wheat;
+}
+
