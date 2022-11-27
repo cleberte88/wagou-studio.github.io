@@ -1,40 +1,101 @@
-img{
-  width: 60px;
+.main-base {
+  background: rgb(0, 0, 41);
 }
 
-.header-nav{
+.header-nav {
   background: black;
 }
 
-h1{
+.header-nav img {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 500px;
+  width: 60px;
+}
+
+.header-nav h1 {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  left: 500px;
+
+}
+
+h1 {
   color: white;
 }
 
-ul{
+ul {
   padding: 15px;
 }
 
-li{
+li {
   display: inline-block;
 }
 
-li a{
+li a {
   color: white;
   text-decoration: none;
   padding: 15px;
 }
 
-li a:hover{
+li a:hover {
   background: #ccc;
   color: black;
 }
 
-.negociation{
+.negociation {
   float: right;
 }
 
-.negociation a:hover{
+.negociation a:hover {
   background: orangered;
   color: wheat;
 }
 
+.container-one {
+  margin-left: 20px;
+}
+
+.container-one h2 {
+  color: white;
+}
+
+.container-one img {
+  width: 300px;
+}
+
+.container-two {
+  margin-left: 20px;
+}
+
+.container-two h2 {
+  color: white;
+}
+
+#works a{
+  color: black;
+  border: 3px solid blue;
+  background-color: white;
+  transition: 1s;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.container-two img {
+  width: 300px;
+}
+
+.information-footer {
+  background: black;
+}
+
+.informations {
+  color: white;
+  text-align: center;
+}
