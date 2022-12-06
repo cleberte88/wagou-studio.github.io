@@ -1,17 +1,18 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
+/* nav bar */
 .hero {
   height: 18vh;
   width: 100%;
   background: #041122;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,37 +21,41 @@ nav{
   padding-right: 10%;
 }
 
-.logo{
+.logo {
   color: white;
   font-size: 28px;
 }
-span{
-color: #7FDA89
+
+span {
+  color: #7FDA89
 }
 
-nav img{
-width: 60px;
+nav img {
+  width: 60px;
 }
 
-nav ul li{
+nav ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
-nav ul li a:hover{
-color: #7FDA89;
-transition: .3s;
-}
-nav a{
-text-decoration: none;
+
+nav ul li a:hover {
+  color: #7FDA89;
+  transition: .3s;
 }
 
-button{
+nav a {
+  text-decoration: none;
+}
+
+button {
   border: none;
   background: #7FDA89;
   padding: 12px 30px;
@@ -58,9 +63,48 @@ button{
   color: white;
   font-weight: bold;
   font-size: 15px;
-  transition:.4s;
+  transition: .4s;
 }
-button:hover{
+
+button:hover {
   transform: scale(1.3);
   cursor: pointer;
+}
+
+/* corpo */
+.container-content {
+  background: #041021;
+}
+
+.logo-content{
+  padding-top: 50px;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.phrase-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}
+
+.fist-p, .second-p{
+  display: block;
+}
+
+.fist-p {
+  color: white;
+  font-size: 30px;
+}
+
+.second-p {
+  color: #7fda89;
+  font-size: 30px;
+  margin-left: 10px;
 }
