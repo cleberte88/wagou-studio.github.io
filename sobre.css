@@ -5,9 +5,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* nav bar */
+/*-Barra de navegação*/
 .hero {
-  height: 18vh;
+  height: 25vh;
   width: 100%;
   background: #041122;
 }
@@ -21,17 +21,63 @@ nav {
   padding-right: 10%;
 }
 
+/*-Titulo h2 "Wagou"*/
 .logo {
+  display: inline-block;
   color: white;
   font-size: 28px;
 }
 
-span {
-  color: #7FDA89
+/*-h2>span " Studio"*/
+#logo2 {
+  display: inline-block;
+  color: #7FDA89;
+  font-size: 28px;
+  margin-left: 10px;
+  transition: .4s;
 }
 
+/*--Animação do h2>span " Studio"*/
+.logo-name:hover #logo2 {
+  color: transparent;
+  cursor: pointer;
+  z-index: 1;
+  background-image: linear-gradient(90deg,
+      #f9d923,
+      #00a19d,
+      #0c87b7,
+      #cb49ff,
+      #ff6666,
+      #f9d923);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 400%;
+  box-shadow: 0 0 15px rgb(2, 4, 24);
+  animation: glow 12s linear forwards;
+}
+
+@keyframes glow {
+
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 400%;
+  }
+
+}
+
+
+/*-Imagem da Logo*/
 nav img {
   width: 60px;
+}
+
+
+/*-Itens da Nav*/
+nav a {
+  text-decoration: none;
 }
 
 nav ul li {
@@ -44,6 +90,19 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  position: relative;
+}
+
+/*--Animação da Nav*/
+nav ul li a::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s ease-in-out;
 }
 
 nav ul li a:hover {
@@ -51,10 +110,12 @@ nav ul li a:hover {
   transition: .3s;
 }
 
-nav a {
-  text-decoration: none;
+nav ul li a:hover::after {
+  width: 100%;
 }
 
+
+/*-Botão "Cursos Livres"*/
 button {
   border: none;
   background: #7FDA89;
@@ -66,9 +127,52 @@ button {
   transition: .4s;
 }
 
+/*--Animação do Botão "Cursos Livres"*/
 button:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   cursor: pointer;
+  z-index: 1;
+  background: linear-gradient(90deg,
+      #f9d923,
+      #00a19d,
+      #0c87b7,
+      #cb49ff,
+      #ff6666,
+      #f9d923);
+  background-size: 400%;
+  box-shadow: 0 0 15px rgb(2, 4, 24);
+  animation: glow 12s linear forwards;
+}
+
+@keyframes glow {
+
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 400%;
+  }
+
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: inherit;
+  filter: blur(36px);
+  z-index: -1;
+  opacity: 0;
+  transition: .4s ease-out;
+}
+
+button:hover::before {
+  opacity: 1;
+  z-index: -1;
 }
 
 /* corpo */
@@ -76,7 +180,7 @@ button:hover {
   background: #041021;
 }
 
-.logo-content{
+.logo-content {
   padding-top: 50px;
   width: 100vw;
   height: 50vh;
@@ -86,7 +190,7 @@ button:hover {
   align-items: center;
 }
 
-.phrase-logo{
+.phrase-logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -94,17 +198,54 @@ button:hover {
   font-weight: 800;
 }
 
-.fist-p, .second-p{
+.fist-p,
+.second-p {
   display: block;
 }
 
 .fist-p {
   color: white;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .second-p {
   color: #7fda89;
-  font-size: 30px;
+  font-size: 50px;
   margin-left: 10px;
+}
+
+.wagou-signification {
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #7fda89;
+  background-color: #7fda89;
+  margin: 0 auto;
+  line-height: 1.6em;
+  border-radius: 15px;
+  width: auto;
+  height: auto;
+  color: #041021;
+  padding: 20px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.wagou-signification:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #7fda89;
+  top: -20px;
+  left: 20%;
+}
+
+.wagou-signification-content-1 {
+  text-align: center;
+}
+
+.wagou-signification-content-2 {
+  text-align: center;
 }
