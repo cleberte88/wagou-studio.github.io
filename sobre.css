@@ -5,6 +5,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*-Barra de navegação*/
 .hero {
   height: 25vh;
@@ -177,7 +181,7 @@ button:hover::before {
 
 /* corpo */
 .container-content {
-  background: #041021;
+  background: linear-gradient(0deg, #e2e4e5 10%, #041021 30%);
 }
 
 .logo-content {
@@ -214,6 +218,7 @@ button:hover::before {
   margin-left: 10px;
 }
 
+/* significado da wagou */
 .wagou-signification {
   font-weight: bold;
   text-align: center;
@@ -221,11 +226,10 @@ button:hover::before {
   background-color: #7fda89;
   margin: 0 auto;
   line-height: 1.6em;
-  border-radius: 15px;
   width: auto;
   height: auto;
   color: #041021;
-  padding: 20px;
+  padding: 40px;
   position: relative;
   margin-top: 50px;
 }
@@ -248,4 +252,69 @@ button:hover::before {
 
 .wagou-signification-content-2 {
   text-align: center;
+}
+
+/* Métodologia da wagou*/
+.methodology-content {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.methodology-content img {
+  width: 450px;
+}
+
+.methodology-content p {
+  color: #ffffe3;
+  text-align: justify;
+  font-weight: 600;
+}
+
+/* time wagou */
+.team-resume {
+  display: inline-block;
+  border: 1px solid #7fda89;
+  background-color: #7fda89;
+  padding: 30px;
+  margin-top: -40px;
+}
+
+.team-resume p {
+  color: #041021;
+  text-align: justify;
+  margin-left: 150px;
+  font-weight: 600;
+}
+
+.img-cleberte img,
+.img-wilson img,
+.img-william img {
+  width: 10%;
+  border-radius: 50%;
+  border: 8px solid #3C4048;
+}
+
+
+.bio-cleberte,
+.bio-wilson,
+.bio-william {
+  background: #259073;
+  border-radius: 10px;
+  width: 408px;
+  height: 600px;
+}
+
+.bio-cleberte p,
+.bio-wilson p,
+.bio-william p {
+  text-align: justify;
+  padding: 70px;
+  color: white;
+}
+
+.bio-cleberte-2,
+.bio-wilson-2,
+.bio-william-2 {
+  margin-top: -60px;
 }
