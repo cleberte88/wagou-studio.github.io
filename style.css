@@ -8,7 +8,7 @@
 
 /*-Barra de navegação*/
 .hero {
-    height: 100vh;
+    height: 15vh;
     width: 100%;
     background: #041122;
 }
@@ -17,9 +17,33 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 8%;
+}
+
+.logo-space{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0px;
+}
+
+/*ScrololBar*/
+::-webkit-scrollbar{
+  width: 0;
+}
+
+#progressbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  border-radius: 10px;
+  background: linear-gradient(to top,#7FDA89,
+  #3cb64a,
+  #14721f,
+  #04570e);
 }
 
 /*-Titulo h2 "Wagou"*/
@@ -27,6 +51,7 @@ nav{
   display: inline-block;
     color: white;
     font-size: 28px;
+    margin-left: 10px;
 }
 
 /*-h2>span " Studio"*/
@@ -34,7 +59,7 @@ nav{
   display: inline-block;
   color: #7FDA89;
   font-size: 28px;
-  margin-left: 10px;
+  margin-left: 5px;
   transition:.4s;
 }
 
@@ -74,7 +99,7 @@ to {
 
 /*-Imagem da Logo*/
 nav img{
-  width: 60px;
+  width: 75px;
 }
 
 
@@ -177,5 +202,55 @@ button::before {
 
 button:hover::before {
   opacity: 1;
+  z-index: -1;
+}
+
+/**/
+/*Lead Page*/
+/**/
+
+body{
+  overflow-x: hidden;
+  background-color: #041122;
+}
+
+.super-hero {
+  width: 100%;
+  height: 135vh;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+}
+
+/*Texto em frente ao Background Video*/
+.content h1 {
+  font-size: 140px;
+  color: #fff;
+  font-weight:700;
+  float: inline-start;
+}
+
+.content a{
+  text-decoration:none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+/*Background Video*/
+.back-video {
+  position: absolute;
+  bottom: 0;
   z-index: -1;
 }

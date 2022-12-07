@@ -18,16 +18,31 @@
 </head>
 
 <body>
+<!--Scrollbar-->
+<div id="progressbar"></div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop(),
+    dh = $(document).height(),
+    wh = $(window).height();
+    scrollPercent = (scroll / (dh-wh)) * 100;
+    $('#progressbar').css('height',scrollPercent + '%')
+  })
+
+</script>
   <!--Barra de navegação-->
   <div class="hero">
     <nav>
-      <img src="img/LOGO-invert.png" alt="logo da página">
-      <a class="logo-name" href="index.html">
-        <h2 class="logo">Wagou</h2>
-        <h2 id="logo2"> Studio</h2>
-      </a>
+      <div class="logo-space">
+        <a href="index.html"><img src="img/LOGO-invert.png" alt="logo da página"></a>
+        <a class="logo-name" href="index.html">
+          <h2 class="logo">Wagou</h2>
+          <h2 id="logo2"> Studio</h2>
+        </a>
+      </div>
       <ul>
-        <li><a href="#">HOME</a></li>
+        <li><a href="index.html">HOME</a></li>
         <li><a href="#">REEL</a></li>
         <li><a href="#">TRABALHOS</a></li>
         <li><a href="#">WAGOU ORIGINALS</a></li>
@@ -37,6 +52,19 @@
       </ul>
       <button type="button">CURSOS LIVRES</button>
     </nav>
+  </div>
+
+  <!--Lead Page-->
+  <div class="super-hero">
+
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="video/Projeto 3D finalizado.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+      <h1>Reel WAGOU</h1>
+      <a href="#">Veja aqui!</a>
+    </div>
   </div>
 
   <!--Rodapé-->
