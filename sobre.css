@@ -11,86 +11,113 @@ body {
 
 /*-Barra de navegação*/
 .hero {
-  height: 25vh;
+  height: 15vh;
   width: 100%;
   background: #041122;
 }
 
-nav {
+nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 8%;
+}
+
+.logo-space{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-right: 0px;
+}
+
+/*ScrololBar*/
+::-webkit-scrollbar{
+width: 0;
+}
+
+#progressbar{
+position: fixed;
+top: 0;
+right: 0;
+width: 15px;
+border-radius: 10px;
+background: linear-gradient(to top,#7FDA89,
+#3cb64a,
+#14721f,
+#04570e);
 }
 
 /*-Titulo h2 "Wagou"*/
-.logo {
-  display: inline-block;
+.logo{
+display: inline-block;
   color: white;
   font-size: 28px;
+  margin-left: 10px;
 }
 
 /*-h2>span " Studio"*/
-#logo2 {
-  display: inline-block;
-  color: #7FDA89;
-  font-size: 28px;
-  margin-left: 10px;
-  transition: .4s;
+#logo2{
+display: inline-block;
+color: #7FDA89;
+font-size: 28px;
+margin-left: 5px;
+transition:.4s;
 }
 
 /*--Animação do h2>span " Studio"*/
-.logo-name:hover #logo2 {
-  color: transparent;
-  cursor: pointer;
-  z-index: 1;
-  background-image: linear-gradient(90deg,
-      #f9d923,
-      #00a19d,
-      #0c87b7,
-      #cb49ff,
-      #ff6666,
-      #f9d923);
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: 400%;
-  box-shadow: 0 0 15px rgb(2, 4, 24);
-  animation: glow 12s linear forwards;
+.logo-name:hover #logo2{
+color: transparent;
+cursor: pointer;
+z-index: 1;
+background-image: linear-gradient(
+  90deg,
+  #f9d923,
+  #00a19d,
+  #0c87b7,
+  #cb49ff,
+  #ff6666,
+  #f9d923
+);
+background-clip: text;
+-webkit-background-clip: text;
+background-size: 400%;
+box-shadow: 0 0 15px rgb(2, 4, 24);
+animation: glow 12s linear forwards;
 }
 
 @keyframes glow {
 
-  from {
-    background-position: 0%;
-  }
+from{
+background-position: 0%;
+}
 
-  to {
-    background-position: 400%;
-  }
+to {
+background-position: 400%;
+}
 
 }
 
 
 /*-Imagem da Logo*/
-nav img {
-  width: 60px;
+nav img{
+width: 75px;
 }
 
 
 /*-Itens da Nav*/
-nav a {
-  text-decoration: none;
+nav a{
+text-decoration: none;
 }
 
-nav ul li {
+nav ul li{
   list-style-type: none;
   display: inline-block;
   padding: 10px 20px;
 }
 
-nav ul li a {
+nav ul li a{
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -99,28 +126,28 @@ nav ul li a {
 
 /*--Animação da Nav*/
 nav ul li a::after {
-  content: " ";
-  width: 0%;
-  height: 4px;
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: 0.4s ease-in-out;
+content: " ";
+width: 0%;
+height: 4px;
+background-color: white;
+position: absolute;
+bottom: 0;
+left: 0;
+transition: 0.4s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: #7FDA89;
-  transition: .3s;
+color: #7FDA89;
+transition: .3s;
 }
 
 nav ul li a:hover::after {
-  width: 100%;
+width: 100%;
 }
 
 
 /*-Botão "Cursos Livres"*/
-button {
+button{
   border: none;
   background: #7FDA89;
   padding: 12px 30px;
@@ -128,21 +155,23 @@ button {
   color: white;
   font-weight: bold;
   font-size: 15px;
-  transition: .4s;
+  transition:.4s;
 }
 
 /*--Animação do Botão "Cursos Livres"*/
-button:hover {
+button:hover{
   transform: scale(1.2);
   cursor: pointer;
   z-index: 1;
-  background: linear-gradient(90deg,
-      #f9d923,
-      #00a19d,
-      #0c87b7,
-      #cb49ff,
-      #ff6666,
-      #f9d923);
+  background: linear-gradient(
+    90deg,
+    #f9d923,
+    #00a19d,
+    #0c87b7,
+    #cb49ff,
+    #ff6666,
+    #f9d923
+  );
   background-size: 400%;
   box-shadow: 0 0 15px rgb(2, 4, 24);
   animation: glow 12s linear forwards;
@@ -150,33 +179,33 @@ button:hover {
 
 @keyframes glow {
 
-  from {
-    background-position: 0%;
-  }
+from{
+  background-position: 0%;
+}
 
-  to {
-    background-position: 400%;
-  }
+to {
+  background-position: 400%;
+}
 
 }
 
 button::before {
-  content: '';
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  bottom: -1px;
-  left: -1px;
-  background: inherit;
-  filter: blur(36px);
-  z-index: -1;
-  opacity: 0;
-  transition: .4s ease-out;
+content: '';
+position: absolute;
+top: -1px;
+right: -1px;
+bottom: -1px;
+left: -1px;
+background: inherit;
+filter: blur(36px);
+z-index: -1;
+opacity: 0;
+transition: .4s ease-out;
 }
 
 button:hover::before {
-  opacity: 1;
-  z-index: -1;
+opacity: 1;
+z-index: -1;
 }
 
 /* corpo */
@@ -287,34 +316,52 @@ button:hover::before {
   font-weight: 600;
 }
 
-.img-cleberte img,
-.img-wilson img,
-.img-william img {
-  width: 10%;
-  border-radius: 50%;
-  border: 8px solid #3C4048;
+.collaborators-and-bio{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 
+
+.img-cleberte img,
+.img-william img,
+.img-wilson img {
+  width: 10%;
+  border-radius: 50%;
+  border: 6px solid #3C4048;
+}
+
 .bio-cleberte,
-.bio-wilson,
-.bio-william {
+.bio-william,
+.bio-wilson {
   background: #259073;
   border-radius: 10px;
-  width: 408px;
+  width: 400px;
   height: 600px;
 }
 
 .bio-cleberte p,
-.bio-wilson p,
-.bio-william p {
+.bio-william p,
+.bio-wilson p {
   text-align: justify;
-  padding: 70px;
+  padding: 60px;
   color: white;
 }
 
 .bio-cleberte-2,
-.bio-wilson-2,
-.bio-william-2 {
-  margin-top: -60px;
+.bio-william-2,
+.bio-wilson-2 {
+  margin-top: -40px;
+}
+
+.container{
+  background: #041122;
+}
+
+.informations-content p{
+  text-align: center;
+  color: white;
+  font-weight: 600;
 }
