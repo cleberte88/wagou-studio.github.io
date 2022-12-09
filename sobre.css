@@ -316,14 +316,35 @@ z-index: -1;
   font-weight: 600;
 }
 
+.collaborators-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 0 15px;
+  z-index: 3;
+  margin-top: 100px;
+  position: relative;
+}
+
 .collaborators-and-bio{
   padding: 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: space-around;
+  z-index: 1;
+  position: relative;
+  bottom: 90px;
 }
 
 
+.img-cleberte,
+.img-william,
+.img-wilson {
+  width: 145px;
+  height: 145px;
+  margin: 0;
+}
 
 .img-cleberte img,
 .img-william img,
@@ -331,6 +352,10 @@ z-index: -1;
   width: 10%;
   border-radius: 50%;
   border: 6px solid #3C4048;
+  width: 145px;
+  height: 145px;
+  display: flex;
+  z-index: 3;
 }
 
 .bio-cleberte,
@@ -338,8 +363,9 @@ z-index: -1;
 .bio-wilson {
   background: #259073;
   border-radius: 10px;
+  padding-top: 30px;;
   width: 400px;
-  height: 600px;
+  height: 500px;
 }
 
 .bio-cleberte p,
