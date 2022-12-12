@@ -12,6 +12,7 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JAVASCRIPT](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![GIT](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+![FIGMA](https://img.shields.io/badge/Figma-000000?style=for-the-badge&logo=figma&logoColor=white)
 <hr>
 
 ## 👨‍💻 Collaborators:
