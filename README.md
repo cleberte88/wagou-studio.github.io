@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/cleberte88/wagou-studio.github.io/blob/main/img/no%20padding.png">
+</p>
+
 ## 🦉- Wagou Studio Site
 <code>
 🎯 Prototyping and construction of an authorial website, made by WilsonFA and cleberte88.
