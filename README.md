@@ -1,6 +1,6 @@
-## 😏- My First Front-End Project
+## 😏- Wagou Studio Site
 <code>
-🎯 Construction of a resume page using best web development practices, working with HTML, CSS and GitHub.
+🎯 Prototyping and construction of an authorial website, made by WilsonFA and cleberte88.
 </code>
 
 <hr>
@@ -16,9 +16,9 @@
 
 ## 👨‍💻 Collaborators:
 
-👉 Cleberte
+👉 [**Cleberte:**](https://github.com/cleberte88) Dev Front-End
 
-👉 Wilson
+👉 [**Wilson:**](https://github.com/WilsonFA) UX/UI Designer  / Dev Front-End
 
 We are two self-taught Front-End students practicing on an animation studio website.
 Daily we study and apply in this project.
