@@ -1,4 +1,4 @@
-## 😏- Wagou Studio Site
+## 🦉- Wagou Studio Site
 <code>
 🎯 Prototyping and construction of an authorial website, made by WilsonFA and cleberte88.
 </code>
