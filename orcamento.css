@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background: #021a3a;
+}
+
+/*-Barra de navegação*/
+.hero {
+  height: 15vh;
+  width: 100%;
+  background: #041122;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 8%;
+}
+
+.logo-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0px;
+}
+
+/*ScrololBar*/
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  border-radius: 10px;
+  background: linear-gradient(to top, #7FDA89,
+      #3cb64a,
+      #14721f,
+      #04570e);
+}
+
+/*-Titulo h2 "Wagou"*/
+.logo {
+  display: inline-block;
+  color: white;
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+/*-h2>span " Studio"*/
+#logo2 {
+  display: inline-block;
+  color: #7FDA89;
+  font-size: 28px;
+  margin-left: 5px;
+  transition: .4s;
+}
+
+/*--Animação do h2>span " Studio"*/
+.logo-name:hover #logo2 {
+  color: transparent;
+  cursor: pointer;
+  z-index: 1;
+  background-image: linear-gradient(90deg,
+      #f9d923,
+      #00a19d,
+      #0c87b7,
+      #cb49ff,
+      #ff6666,
+      #f9d923);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 400%;
+  box-shadow: 0 0 15px rgb(2, 4, 24);
+  animation: glow 12s linear forwards;
+}
+
+@keyframes glow {
+
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 400%;
+  }
+
+}
+
+/*-Imagem da Logo*/
+nav img {
+  width: 75px;
+}
+
+
+/*-Itens da Nav*/
+nav a {
+  text-decoration: none;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+/*--Animação da Nav*/
+nav ul li a::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #7FDA89;
+  transition: .3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+/*-Botão "Cursos Livres"*/
+button {
+  border: none;
+  background: #7FDA89;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+}
+
+/*--Animação do Botão "Cursos Livres"*/
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  z-index: 1;
+  background: linear-gradient(90deg,
+      #f9d923,
+      #00a19d,
+      #0c87b7,
+      #cb49ff,
+      #ff6666,
+      #f9d923);
+  background-size: 400%;
+  box-shadow: 0 0 15px rgb(2, 4, 24);
+  animation: glow 12s linear forwards;
+}
+
+@keyframes glow {
+
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 400%;
+  }
+
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: inherit;
+  filter: blur(36px);
+  z-index: -1;
+  opacity: 0;
+  transition: .4s ease-out;
+}
+
+button:hover::before {
+  opacity: 1;
+  z-index: -1;
+}
+
+/*corpo*/
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.content-1{
+  flex: 30%;
+  margin-left: 10%;
+  background: #808080;
+  border-radius: 10px;
+}
+
+.content-1 h2{
+  text-align: center;
+  font-size: 40px;
+}
+
+.content-1 p{
+  margin-top: 10px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.content-1 img{
+  text-align: center;
+  width: 400px;
+  margin-top: 80px;
+}
+
+.content-2{
+  flex: 45%;
+  margin-right: 15%;
+  padding: 10%;
+}
+
+form{
+  margin: 0 auto;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  background: black;
+  color: white;
+}
+
+.info-orcamento input{
+  background: rgb(110, 102, 102);
+}
+
+
+/*rodapé*/
+.footer{
+  background: #041122;
+}
+
+.informations-content p{
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
