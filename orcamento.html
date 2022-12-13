@@ -66,29 +66,45 @@
         <img src="img/banner_img.png" alt="robozinho do orçamento">
       </div>
       <div class="content-2">
-        <form name="orcamentos" class="infos-orcamento">
-          <P>NOME:</P>
-          <input name="nome" type="text" placeholder="Digite seu nome">
-          <p>E-MAIL:</p>
-          <input type="email" placeholder="Digite seu e-mail">
-          <p>TELEFONE:</p>
-          <input type="tel" placeholder="(99) 99999-9999">
-          <p>Quais serviços você precisa?</p>
-          <select name="servicos" id="servicos">
-            <option value="selecione um item" selected disabled>Selecione um item</option>
-            <option value="Animação para Divulgação e Marketing">Animação para Divulgação e Marketing</option>
-            <option value="Animação para Treinamentos">Animação para Treinamentos</option>
-            <option value="Clipe Infantil Animado">Clipe Infantil Animado</option>
-            <option value="Episódeo para Série de TV / Internet">Episódeo para Série de TV / Internet</option>
-            <option value="Vinheta (animções curtas de até 10 seg)">Vinheta (animções curtas de até 10 seg)</option>
-            <option value="Criação de Mascotes">Criação de Mascotes</option>
-            <option value="Ilustrações para Livros">Ilustrações para Livros</option>
-            <option value="Ilustração para Publicidade">Ilustração para Publicidade</option>
-          </select>
-          <p>Informações sobre seu projeto:</p>
-          <textarea rows="10" cols="40" maxlength="500"
-            placeholder="(EX: DURAÇÃO, QUANTIDADE, LINKS DE REFERÊNCIA, ETC) "></textarea>
-        </form>
+        <div class="content">
+          <form id="form">
+            <div>
+              <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
+              <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
+            <div>
+              <input type="email" placeholder="Digite seu melhor email" class="inputs required"
+                oninput="emailValidate()">
+              <span class="span-required">Digite um email válido</span>
+            </div>
+
+            <div>
+              <select id="selecao" class="inputs required">
+                <option value="selecione" selected disabled>Selecione um item</option>
+
+                <option value="Animação para Divulgação e Marketing">Animação para Divulgação e Marketing</option>
+
+                <option value="Animação para Treinamentos">Animação para Treinamentos</option>
+
+                <option value="Clipe Infantil Animado">Clipe Infantil Animado</option>
+
+                <option value="Episódeo para Série de TV / Internet">Episódeo para Série de TV / Internet</option>
+
+                <option value="Vinheta (animções curtas de até 10 seg)">Vinheta (animções curtas de até 10 seg)</option>
+
+                <option value="Criação de Mascotes">Criação de Mascotes</option>
+
+                <option value="Ilustrações para Livros">Ilustrações para Livros</option>
+
+                <option value="Ilustração para Publicidade">Ilustração para Publicidade</option>
+              </select>
+            </div>
+            <textarea class="inputs" name="descricao" id="descricao" cols="40" rows="10"
+              placeholder="Fale um pouco sobre você..."></textarea>
+
+            <button id="submit" type="submit">Enviar</button>
+          </form>
+        </div>
       </div>
     </div>
   </main>
@@ -99,6 +115,8 @@
       <p class="copyright-company">©2022 por Wagou Studio.</p>
     </div>
   </footer>
+
+  <script src="orcamento.js"></script>
 </body>
 
 </html>
