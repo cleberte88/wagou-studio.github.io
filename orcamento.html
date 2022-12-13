@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="orcamento.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <!--Scrollbar-->
+  <div id="progressbar"></div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop(),
+        dh = $(document).height(),
+        wh = $(window).height();
+      scrollPercent = (scroll / (dh - wh)) * 100;
+      $('#progressbar').css('height', scrollPercent + '%')
+    })
+
+  </script>
+  <!--Barra de navegação-->
+  <div class="hero">
+    <nav>
+      <div class="logo-space">
+        <a href="index.html"><img src="img/LOGO-invert.png" alt="logo da página"></a>
+        <a class="logo-name" href="index.html">
+          <h2 class="logo">Wagou</h2>
+          <h2 id="logo2"> Studio</h2>
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">REEL</a></li>
+        <li><a href="#">TRABALHOS</a></li>
+        <li><a href="#">WAGOU ORIGINALS</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="orcamento.html">CONTATO</a></li>
+        <li><a href="#">ORÇAMENTO</a></li>
+      </ul>
+      <button type="button">CURSOS LIVRES</button>
+    </nav>
+  </div>
+
+  <main class="principal-page">
+    <div class="container">
+      <div class="content-1">
+        <h2>ORÇAMENTOS</h2>
+        <hr>
+        <p>A Wagou quer te ajudar coma melhor produção para o seu projeto!</p>
+        <p>Preencha esse formulário para que possamos entender seu projeto.</p>
+        <p>Se preferir, envie um e-mail para a gente: equipewagou@gmail.com</p>
+        <img src="img/banner_img.png" alt="robozinho do orçamento">
+      </div>
+      <div class="content-2">
+        <form name="orcamentos" class="infos-orcamento">
+          <P>NOME:</P>
+          <input name="nome" type="text" placeholder="Digite seu nome">
+          <p>E-MAIL:</p>
+          <input type="email" placeholder="Digite seu e-mail">
+          <p>TELEFONE:</p>
+          <input type="tel" placeholder="(99) 99999-9999">
+          <p>Quais serviços você precisa?</p>
+          <select name="servicos" id="servicos">
+            <option value="selecione um item" selected disabled>Selecione um item</option>
+            <option value="Animação para Divulgação e Marketing">Animação para Divulgação e Marketing</option>
+            <option value="Animação para Treinamentos">Animação para Treinamentos</option>
+            <option value="Clipe Infantil Animado">Clipe Infantil Animado</option>
+            <option value="Episódeo para Série de TV / Internet">Episódeo para Série de TV / Internet</option>
+            <option value="Vinheta (animções curtas de até 10 seg)">Vinheta (animções curtas de até 10 seg)</option>
+            <option value="Criação de Mascotes">Criação de Mascotes</option>
+            <option value="Ilustrações para Livros">Ilustrações para Livros</option>
+            <option value="Ilustração para Publicidade">Ilustração para Publicidade</option>
+          </select>
+          <p>Informações sobre seu projeto:</p>
+          <textarea rows="10" cols="40" maxlength="500"
+            placeholder="(EX: DURAÇÃO, QUANTIDADE, LINKS DE REFERÊNCIA, ETC) "></textarea>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="informations-content">
+      <p class="name-company">Wagou Studios</p>
+      <p class="email-company">equipewagou@gmail.com</p>
+      <p class="copyright-company">©2022 por Wagou Studio.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
