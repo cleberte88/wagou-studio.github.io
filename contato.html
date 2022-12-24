@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/contato.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+
+  <title>Contato</title>
+</head>
+
+<body>
+  <!--Barra de navegação-->
+  <div class="hero">
+    <nav>
+      <div class="logo-space">
+        <a href="index.html"><img src="img/LOGO-invert.png" alt="logo da página"></a>
+        <a class="logo-name" href="index.html">
+          <h2 class="logo">Wagou</h2>
+          <h2 id="logo2"> Studio</h2>
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="reel.html">REEL</a></li>
+        <li><a href="trabalhos.html">TRABALHOS</a></li>
+        <li><a href="wagou-original.html">WAGOU ORIGINALS</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+        <li><a href="orcamento.html">ORÇAMENTO</a></li>
+      </ul>
+      <!--<button class="button" type="button">CURSOS LIVRES</button>-->
+    </nav>
+  </div>
+
+  <header class="container-contact">
+    <div class="container-contact-infos">
+      <div class="contact-infos">
+        <h2>Contatos</h2>
+        <ul>
+          <li>e-mail</li>
+          <li>instagram</li>
+          <li>telefone</li>
+          <li>others</li>
+        </ul>
+      </div>
+      <div class="contact-forms">
+        <div class="forms-contact">
+          <div class="input-name">
+            <label for="">Nome</label>
+            <input type="text" placeholder="Digite seu nome" required class="required" oninput="nameValidate()">
+            <span class="span-required">O nome deve conter no mínimo 3 caractéres</span>
+          </div>
+          <div class="input-last-name">
+            <label for="">Sobre Nome</label>
+            <input type="text" placeholder="Digite seu sobre nome" required class="required" oninput="lastNameValidate()">
+            <span class="span-required">O sobrenome deve conter no mínimo 2 caractéres</span>
+          </div>
+          <div class="input-email">
+            <label for="">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" required class="required" oninput="emailValidate()">
+            <span class="span-required">E-mail inválido</span>
+          </div>
+          <div class="area-text">
+            <textarea name="area-texto" id="area-de-texto" cols="65" rows="10" placeholder="Digite sua mensagem"></textarea>
+          </div>
+          <div class="button">
+            <button onclick="validate()">Enviar</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+
+
+  <script src="js/contato.js"></script>
+</body>
+
+</html>
