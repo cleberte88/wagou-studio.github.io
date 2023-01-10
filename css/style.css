@@ -39,7 +39,8 @@ nav{
   top: 0;
   right: 0;
   width: 15px;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background: linear-gradient(to top,#7FDA89,
   #3cb64a,
   #14721f,
@@ -183,7 +184,7 @@ button:hover{
   to {
     background-position: 400%;
   }
-  
+
 }
 
 button::before {
@@ -250,6 +251,7 @@ body{
 
 /*Background Video*/
 .back-video {
+    filter: brightness(0.4) blur(5px);
   position: absolute;
   bottom: 0;
   z-index: -1;

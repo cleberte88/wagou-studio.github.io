@@ -34,7 +34,18 @@ padding-right: 0px;
 
 /*ScrololBar*/
 ::-webkit-scrollbar{
-width: 0;
+  background-color: transparent;
+  padding-right: 50px!important;
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #7FDA89;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar:horizontal{
+  height: 0;
 }
 
 #progressbar{
@@ -368,28 +379,28 @@ z-index: -1;
   z-index: 3;
 }
 
-.bio-cleberte,
-.bio-william,
-.bio-wilson {
-  background: #259073;
+.Collaborator {
+  background: #041021;
   border-radius: 10px;
-  padding-top: 30px;;
+  padding-top: 70px;
   width: 400px;
   height: 500px;
 }
 
-.bio-cleberte p,
-.bio-william p,
-.bio-wilson p {
+.Bio {
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+.Bio-Text {
   text-align: justify;
-  padding: 60px;
+  margin: 0 60px 0 60px;
   color: white;
 }
 
-.bio-cleberte-2,
-.bio-william-2,
-.bio-wilson-2 {
-  margin-top: -40px;
+.Bio-name {
+  font-size: 27px;
 }
 
 .container{
