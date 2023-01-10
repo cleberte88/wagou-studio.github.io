@@ -55,59 +55,57 @@
     </nav>
   </div>
 
-  <main class="principal-page">
-    <div class="container">
-      <div class="content-1">
-        <h2>ORÇAMENTOS</h2>
-        <hr>
+  <div class="container">
+    <div class="container-contet">
+      <h1 class="parag-orc">
+        Faça seu orçamento
+      </h1>
+      <hr>
+      <div class="tittle-orc">
         <p>A Wagou quer te ajudar coma melhor produção para o seu projeto!</p>
         <p>Preencha esse formulário para que possamos entender seu projeto.</p>
         <p>Se preferir, envie um e-mail para a gente: equipewagou@gmail.com</p>
-        <img src="img/banner_img.png" alt="robozinho do orçamento">
-      </div>
-      <div class="content-2">
-        <div class="content">
-          <form id="form">
-            <div>
-              <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
-              <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
-            </div>
-            <div>
-              <input type="email" placeholder="Digite seu melhor email" class="inputs required"
-                oninput="emailValidate()">
-              <span class="span-required">Digite um email válido</span>
-            </div>
-
-            <div>
-              <select id="selecao" class="inputs required">
-                <option value="selecione" selected disabled>Selecione um item</option>
-
-                <option value="Animação para Divulgação e Marketing">Animação para Divulgação e Marketing</option>
-
-                <option value="Animação para Treinamentos">Animação para Treinamentos</option>
-
-                <option value="Clipe Infantil Animado">Clipe Infantil Animado</option>
-
-                <option value="Episódeo para Série de TV / Internet">Episódeo para Série de TV / Internet</option>
-
-                <option value="Vinheta (animções curtas de até 10 seg)">Vinheta (animções curtas de até 10 seg)</option>
-
-                <option value="Criação de Mascotes">Criação de Mascotes</option>
-
-                <option value="Ilustrações para Livros">Ilustrações para Livros</option>
-
-                <option value="Ilustração para Publicidade">Ilustração para Publicidade</option>
-              </select>
-            </div>
-            <textarea class="inputs" name="descricao" id="descricao" cols="40" rows="10"
-              placeholder="Fale um pouco sobre você..."></textarea>
-
-            <button id="submit" type="submit">Enviar</button>
-          </form>
-        </div>
+        <img src="./img/banner_img.png" alt="foto orçamento">
       </div>
     </div>
-  </main>
+    <form class="form-orc">
+      <section class="section-form">
+        <div class="input-name">
+          <input type="text" placeholder="Digite seu nome" class="ipt">
+          <input type="text" placeholder="Digite seu sobrenome" class="ipt" id="ipt">
+        </div>
+        <div class="input-email">
+          <input type="email" name="email" id="email"
+          placeholder="Digite seu e-mail">
+        </div>
+        <div class="box-selector">
+          <select id="selecao" class="inputs required">
+            <option value="selecione" selected="" disabled="">Selecione um item</option>
+
+            <option value="Animação para Divulgação e Marketing">Animação para Divulgação e Marketing</option>
+
+            <option value="Animação para Treinamentos">Animação para Treinamentos</option>
+
+            <option value="Clipe Infantil Animado">Clipe Infantil Animado</option>
+
+            <option value="Episódeo para Série de TV / Internet">Episódeo para Série de TV / Internet</option>
+
+            <option value="Vinheta (animções curtas de até 10 seg)">Vinheta (animções curtas de até 10 seg)</option>
+
+            <option value="Criação de Mascotes">Criação de Mascotes</option>
+
+            <option value="Ilustrações para Livros">Ilustrações para Livros</option>
+
+            <option value="Ilustração para Publicidade">Ilustração para Publicidade</option>
+          </select>
+        </div>
+        <div class="text-informations">
+          <textarea name="" id="" cols="55" rows="10"></textarea>
+        </div>
+      </section>
+    </form>
+  </div>
+
   <footer class="footer">
     <div class="informations-content">
       <p class="name-company">Wagou Studios</p>
