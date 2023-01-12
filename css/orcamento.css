@@ -205,108 +205,114 @@ button:hover::before {
 }
 
 /*corpo*/
-
 .container{
+  padding: 20px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+  justify-content:space-around;
+}
+
+.container-content{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  max-width: 480px;
+}
+
+.tittle-orc{
+  background: rgb(3,21,44);
+  margin-top: 10px;
   padding: 10px;
 }
 
-.content-1{
-  flex: 30%;
-  margin-left: 10%;
-  background: #808080;
-  border-radius: 10px;
-  margin-top: 10px;
+.tittle-orc p{
+  color: rgb(255, 255, 230);
+  margin-bottom: 30px;
 }
 
-.content-1 h2{
-  text-align: center;
-  font-size: 40px;
+.tittle-orc img{
+  margin-top: 50px;
+  width: 500px;
 }
 
-.content-1 p{
-  margin-top: 10px;
-  text-align: justify;
-  padding: 20px;
-}
-
-.content-1 img{
-  text-align: center;
-  width: 400px;
-  margin-top: 80px;
-}
-
-.content-2{
-  flex: 45%;
-  margin-right: 15%;
-  padding: 10%;
+.parag-orc{
+  color: rgb(255, 255, 230);
+  margin-bottom: 24px;
+  font-size: 54px;
+  line-height: 64px;
 }
 
 
-/*formulário*/
-.content{
-  background-color: black;
-  padding: 2rem;
-  border-radius: 10px;
-  min-width: 30%;
-  overflow: auto;
-}
 
-h1{
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.content form{
+form{
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
-.span-required{
-  font-size: 12px;
-  margin: 3px 0 0 1px;
-  color: red;
-  display: none;
-}
-
-.inputs{
-  padding: 8px 5px;
-  outline: none;
-  border-radius: 5px;
-  background-color: #ccc;
-  border: 2px solid var(--color-dark1);
-  color: var(--color-white);
+.form-orc{
   width: 100%;
-  box-sizing: border-box;
-  transition: .3s;
+  max-width: 480px;
+  background: rgb(3, 21, 44);
+  border-radius: 5px;
+  padding: 54px;
 }
 
-.inputs:focus{
-  border-color: var(--color-purple1);
+.section-form{
+  display: grid;
+  grid-auto-flow: row;
+  gap: 10px;
+  row-gap: 10px;
+  column-gap: 10px;
 }
 
-.box-select{
+.input-name{
   display: flex;
-  justify-content: space-evenly;
-  font-weight: bold;
-  gap: 1rem;
+  width: 100%;
 }
 
-@media screen and (max-width: 576px) {
-  .box-select{
-      flex-direction: column;
-      gap: 5px;
-  }
+.input-name input{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  outline: 0;
 }
 
+#ipt{
+  margin-left: 10px;
+}
 
-/*rodapé*/
+.input-email input{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: 0;
+}
+
+.box-selector select{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+textarea{
+  resize: none;
+  border-radius: 10px;
+  outline: 0;
+  padding: 10px;
+}
+
+/* footer */
 .footer{
-  background: #041122;
+  background: rgb(4,17,34);
 }
 
 .informations-content p{
