@@ -265,10 +265,10 @@ nav ul li a:hover::after {
 }
 
 .container-img {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: baseline;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+  transition: trasform 100ms ease-in-out;
 }
 
 .img-blocks {
@@ -276,9 +276,26 @@ nav ul li a:hover::after {
   margin-top: 20px;
   margin-bottom: 20px;
   height: 250px;
-  border: 1px solid orange;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.img-blocks:hover{
+  transform: scale(1.05);
+}
+
+.img-blocks:hover p{
+  display: block;
+}
+
+.img-blocks p{
+  position: relative;
+  top: -30px;
+  color: #FFF;
+  display: none;
+  background: gray;
+  text-align: center;
+  opacity: 0.8;
 }
 
 .img-blocks img{
