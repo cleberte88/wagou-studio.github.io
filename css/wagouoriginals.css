@@ -159,16 +159,37 @@ nav ul li a:hover::after {
 .carousel {
   padding: 40px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item{
+  position: relative;
+}
+
+.info{
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 500px;
+  /* bottom: -155px;
+  left: 410px;
+  width: 40%;*/
+  text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
   width: 100%;
 }
 
 .carousel img {
   border: 5px solid black;
   box-shadow: 0 0 10px black;
-  width: 60%;
+  width: 600px;
 }
 
-.description-image {
+.description-image h3{
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
