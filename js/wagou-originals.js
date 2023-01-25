@@ -1,10 +1,10 @@
 let vitrine = document.createElement('div');
-vitrine.setAttribute('id','vitrine');
+vitrine.setAttribute('id', 'vitrine');
 
 
 let items = [
     {
-        id:1,
+        id: 1,
         name: 'William',
         description: 'Animador e pós produtor da Wagou',
         image: {
@@ -13,7 +13,7 @@ let items = [
         date: '00/00/0001'
     },
     {
-        id:2,
+        id: 2,
         name: 'Wilson',
         description: 'Animador e desenvolvedor Front-End',
         image: {
@@ -22,7 +22,7 @@ let items = [
         date: '00/00/0002'
     },
     {
-        id:3,
+        id: 3,
         name: 'Cleberte',
         description: 'Desenvolvedor Front-End',
         image: {
@@ -33,7 +33,7 @@ let items = [
 ]
 
 // create HTML elements for each item
-for(let i = 0; i < items.length; i++) {
+for (let i = 0; i < items.length; i++) {
     let item = document.createElement('div');
     item.setAttribute('class', 'item');
 
@@ -64,11 +64,11 @@ for(let i = 0; i < items.length; i++) {
     info.appendChild(date);
     item.appendChild(info);
 
-    item.addEventListener('mouseover', function() {
+    item.addEventListener('mouseover', function () {
         item.querySelector('.info').style.display = 'block';
     });
 
-    item.addEventListener('mouseleave', function() {
+    item.addEventListener('mouseleave', function () {
         item.querySelector('.info').style.display = 'none';
     });
 
@@ -107,72 +107,50 @@ let imgDesc = [
         id: 1,
         name: 'Item 1',
         description: 'Teste de descrição do original',
-        image: '../img/cleberte.jpeg'
+        image: '../img/cleberte.jpeg',
+        urlPath: "../reel.html"
     },
     {
         id: 2,
         name: 'Item 2',
         description: 'Description of Item 2',
-        image: '../img/foto do wilson.jpg'
+        image: '../img/foto do wilson.jpg',
+        urlPath: "../reel.html"
     },
     {
         id: 3,
         name: 'Item 3',
         description: 'Description of Item 3',
-        image: '../img/william.jpeg'
+        image: '../img/william.jpeg',
+        urlPath: "../reel.html"
     }
 ];
 
 let section = document.getElementById('container-originals-content');
 let divAll = document.querySelector('.divAll-content');
 let title = document.createElement('h2');
-title.setAttribute('class', 'title-section')
+title.setAttribute('class', 'title-section');
 title.innerHTML = 'Mais sobre nossos originals';
 section.appendChild(title);
 section.appendChild(divAll);
 
-imgDesc.forEach(function(item, index) {
+imgDesc.forEach(function (item, index) {
     let div = document.createElement('div');
     div.setAttribute('class', 'div-img-desc');
     let img = document.createElement('img');
     let p = document.createElement('p');
 
-    img.src = item.image;
-    img.alt = item.name;
-    img.onclick = function (){
-        if(index == 0){
-            let container = document.querySelector('.container-originals');
-            container.style.display = 'none';
-            alert('Index 0 funcionou');
-        }
-        else if(index == 1){
-            let container = document.querySelector('.container-originals');
-            container.style.display = 'none';
-            alert('Index 1 funcionou');
-        }else{
-            let container = document.querySelector('.container-originals');
-            container.style.display = 'none';
-            alert('Index 3 funcionou');
-        }
-    }
-    p.onclick = function (){
-        if(index == 0){
-            let container = document.querySelector('.container-originals');
-            container.style.display = 'none';
-            alert('Index 0 funcionou');
-        }
-        else if(index == 1){
-            let container = document.querySelector('.container-originals');
-            container.style.display = 'none';
-            alert('Index 1 funcionou');
-        }else{
-            let container = document.querySelector('.container-originals');
-            container.style.display = 'none';
-            alert('Index 3 funcionou');
-        }
+    function redirectCallback() {
+        window.location.replace(item.urlPath);
+        console.log(`Index ${index} funcionou`);
     }
 
-    
+    img.src = item.image;
+    img.alt = item.name;
+    img.onclick = redirectCallback;
+
+    p.onclick = redirectCallback;
+
     p.innerHTML = item.description;
 
     div.appendChild(img);
