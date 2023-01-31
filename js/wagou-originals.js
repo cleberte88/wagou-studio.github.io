@@ -8,7 +8,8 @@ let items = [
         name: 'William',
         description: 'Animador e pós produtor da Wagou',
         image: {
-            src: "../img/william.jpeg"
+            src: "../img/william.jpeg",
+            class: "teste"
         },
         date: '00/00/0001'
     },
@@ -17,7 +18,8 @@ let items = [
         name: 'Wilson',
         description: 'Animador e desenvolvedor Front-End',
         image: {
-            src: "../img/foto do wilson.jpg"
+            src: "../img/foto do wilson.jpg",
+            class: "teste"
         },
         date: '00/00/0002'
     },
@@ -26,7 +28,8 @@ let items = [
         name: 'Cleberte',
         description: 'Desenvolvedor Front-End',
         image: {
-            src: "../img/cleberte.jpeg"
+            src: "../img/cleberte.jpeg",
+            class: "teste"
         },
         date: '12/12/2000'
     }
@@ -106,9 +109,9 @@ let imgDesc = [
     {
         id: 1,
         name: 'Item 1',
-        description: 'Teste de descrição do original',
-        image: '../img/cleberte.jpeg',
-        urlPath: "../reel.html"
+        description: 'Background',
+        image: 'https://static.wixstatic.com/media/01d23c_7cb44da0119f488aa0786ecc0730e003~mv2.png/v1/fill/w_741,h_417,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cenario%20lofi%20girl1.png',
+        urlPath: "../components/background/background.html"
     },
     {
         id: 2,
@@ -122,7 +125,8 @@ let imgDesc = [
         name: 'Item 3',
         description: 'Description of Item 3',
         image: '../img/william.jpeg',
-        urlPath: "../reel.html"
+        urlPath: "../reel.html",
+        class: "teste"
     }
 ];
 
