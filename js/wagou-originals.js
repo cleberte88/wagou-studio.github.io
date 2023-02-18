@@ -123,10 +123,9 @@ let imgDesc = [
     {
         id: 3,
         name: 'Item 3',
-        description: 'Description of Item 3',
-        image: '../img/william.jpeg',
-        urlPath: "../reel.html",
-        class: "teste"
+        description: 'Character Design',
+        image: 'https://static.wixstatic.com/media/01d23c_d090344af578424cb63cf1296f0b6ad7~mv2.png/v1/fill/w_600,h_338,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Jason%20uilsu.png',
+        urlPath: "../components/character-design/character-design.html"
     }
 ];
 
@@ -146,7 +145,6 @@ imgDesc.forEach(function (item, index) {
 
     function redirectCallback() {
         window.location.replace(item.urlPath);
-        console.log(`Index ${index} funcionou`);
     }
 
     img.src = item.image;
