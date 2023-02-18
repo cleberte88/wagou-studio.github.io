@@ -116,9 +116,9 @@ let imgDesc = [
     {
         id: 2,
         name: 'Item 2',
-        description: 'Description of Item 2',
-        image: '../img/foto do wilson.jpg',
-        urlPath: "../reel.html"
+        description: 'Illustrations',
+        image: 'https://static.wixstatic.com/media/01d23c_56a4a6fe89b24dff85bb960cc99f8896~mv2.png/v1/fill/w_741,h_417,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/darkin%2010.png',
+        urlPath: "../components/illustrations/illustrations.html"
     },
     {
         id: 3,
